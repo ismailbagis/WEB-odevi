@@ -1,0 +1,18 @@
+body {
+    background-image: url('../Resimler/indexback.jpg');
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+.container p {
+    font-size: 48px;
+    margin-bottom: 20px;
+        color:darkslategray;
+        align-items: center;
+}

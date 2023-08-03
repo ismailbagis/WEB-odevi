@@ -1,0 +1,51 @@
+body {
+  background-image: url('../Resimler/mardin.jpg');
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/* Carousel boyutu */
+.carousel {
+  height: 600px; /* İstediğiniz sabit yükseklik */
+  max-width: 900px; /* İstediğiniz maksimum genişlik */
+  margin: 0 auto; /* Yatayda ortalamak için */
+  overflow: hidden; /* Taşan içerikleri göstermez */
+}
+
+/* Carousel içindeki resimler */
+.carousel-inner img {
+  height: 100%; /* Carousel boyutuna göre yükseklik */
+  width: auto; /* Genişlik oranı korunsun */
+  display: block; /* Resimlerin yan yana olmasını önler */
+  margin: 0 auto; /* Yatayda ortalamak için */
+}
+
+
+.container {
+  opacity: 0.9;
+  /* %70 saydamlık */
+
+}
+
+
+/* herhangi bir cihazda yüzde 5 oalrak sabitlemeye yarar.*/
+#headerSection .row {
+  height: 5vh;
+  background-color: rgba(99, 64, 64, 0.6);
+}
+
+iframe {
+  width: 400px;
+  height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+
+  iframe {
+    width: 200px;
+    height: 100px;
+  }
+}

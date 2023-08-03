@@ -1,0 +1,27 @@
+body {
+    background-image: url('../Resimler/özgecmisback.jpg');
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #cfb53b;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto auto;
+    padding: 20px;
+    background-color:rgba(64, 85, 99,0.6);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+table {
+    text-align: center;
+}

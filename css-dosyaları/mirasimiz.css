@@ -1,0 +1,31 @@
+body {
+    background-image: url("../Resimler/mardin\ kalesi.jpeg");
+    background-attachment: scroll;
+    
+}
+
+h1, h2 {
+    color:rgb(199, 44, 44);
+}
+
+iframe {
+    width: 512px;
+    height: 256px;
+  }
+  .container{
+    background-color: rgb(113, 105, 95);
+    opacity: 0.9;
+}
+  
+@media screen and (max-width: 767px) {
+
+  iframe {
+    width: 256px;
+    height: 128px;
+  }
+
+  body {
+    background-attachment: fixed;
+}
+
+}
