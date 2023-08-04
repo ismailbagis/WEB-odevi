@@ -57,6 +57,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Giriş Yap</a>
                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="api.html">Meraklısına</a>
+                    </li>
                 </ul>
             </div>
         </nav>
