@@ -34,10 +34,10 @@ function clearForm() {
     document.getElementById("yer3").checked = false;
     document.getElementById("yer4").checked = false;
     document.getElementById("yer5").checked = false;
-    document.getElementById("language1").checked = false;
-    document.getElementById("language2").checked = false;
-    document.getElementById("language3").checked = false;
-    document.getElementById("language4").checked = false;
+    document.getElementById("dil1").checked = false;
+    document.getElementById("dil2").checked = false;
+    document.getElementById("dil3").checked = false;
+    document.getElementById("dil4").checked = false;
     document.getElementById("p1").checked = false;
     document.getElementById("p2").checked = false;
     document.getElementById("p3").checked = false;
