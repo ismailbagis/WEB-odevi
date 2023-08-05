@@ -1,3 +1,4 @@
+/*BODY ÖZELLİKLERİ*/
 body {
     font-family: "Times New Roman", serif;
     font-weight: bold;
@@ -11,13 +12,14 @@ body {
     background-size: cover;
 }
 
+/*Başlıkların özellikleri*/
 h1,h2 {
     text-align: center;
     color: black;
 }
 
 .navbar-brand {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -32,3 +34,4 @@ p {
     line-height: 1.4;
     margin-bottom: 15px;
 }
+
