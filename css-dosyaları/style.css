@@ -15,7 +15,12 @@ body {
 /*Başlıkların özellikleri*/
 h1,h2 {
     text-align: center;
-    color: black;
+    color: rgb(255, 0, 0);
+}
+h5{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
 }
 
 .navbar-brand {

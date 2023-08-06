@@ -1,10 +1,12 @@
 function validateForm() {
     var nameInput = document.getElementById("name");
+    var surNameInput = document.getElementById("surName");
     var emailInput = document.getElementById("email");
     var nameError = document.getElementById("nameError");
     var emailError = document.getElementById("emailError");
 
-    var namePattern = /^[A-Z a-zğüşıöçĞÜŞİÖÇ]+$/;
+    var namePattern = /^[a-zA-ZğüşıöçĞÜŞİÖÇ]+$/;
+    var surNamePattern = /^[a-zA-ZğüşıöçĞÜŞİÖÇ]+$/;
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!namePattern.test(nameInput.value)) {
@@ -12,6 +14,12 @@ function validateForm() {
         return false;
     } else {
         nameError.innerText = "";
+    }
+    if (!surNamePattern.test(surNameInput.value)) {
+        surNameError.innerText = "Sadece Harf Kullanabilirsiniz.";
+        return false;
+    } else {
+        surNameError.innerText = "";
     }
 
     if (!emailPattern.test(emailInput.value)) {
@@ -26,6 +34,7 @@ function validateForm() {
 
 function clearForm() {
     document.getElementById("name").value = "";
+    document.getElementById("surName").value = "";
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
     document.getElementById("cinsiyet").value = "erkek";

@@ -1,6 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
+    $surName = $_POST["surName"];
     $email = $_POST["email"];
     $message = $_POST["message"];
     $cinsiyet = $_POST["cinsiyet"];
@@ -22,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="./css-dosyaları/iletisim.css">
-    <link rel="stylesheet" href="././css-dosyaları/style.css">
+    <link rel="stylesheet" href="./css-dosyaları/style.css">
 
 </head>
 <body>
@@ -70,6 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="output">
             <p><strong>Ad:</strong> <?php echo $name; ?></p>
+            <p><strong>Soyad:</strong> <?php echo $surName; ?></p>
             <p><strong>Email:</strong> <?php echo $email; ?></p>
             <p><strong>Mesaj:</strong> <?php echo $message; ?></p>
             <p><strong>Cinsiyet:</strong> <?php echo $cinsiyet; ?></p>
