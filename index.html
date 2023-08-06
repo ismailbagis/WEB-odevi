@@ -13,6 +13,24 @@
 
     <link rel="stylesheet" href="./css-dosyaları/index.css">
     <link rel="stylesheet" href="./css-dosyaları/style.css">
+    <title>Canlı Saat</title>
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            var timeString = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("saat").textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000); // Her saniye güncelle
+    </script>
 </head>
 
 <body>
@@ -52,6 +70,10 @@
                         <a class="nav-link" href="api.html">Meraklısına</a>
                     </li>
                 </ul>
+                <div class="collapse navbar-collapse saat" id="navbarNav">
+                    <h4 class="left"></h4>
+                </div>
+             <p class="saatcss" id="saat"></p>
             </div>
         </nav>
     </header>
